@@ -1,0 +1,9 @@
+{block #title}Správa uživatelů | {include #parent}{/block} {block #content}     {foreach $users as $page} 
+<div id="annonce">	
+  <p>
+    <a href="{link edit, $page->id}">
+      <img src="{$baseUri}img/admin/edit_user.png" width="45" height="45" class="upravit">  </a> 
+    <a href="{link delete, $page->id}">
+      <img src="{$baseUri}img/admin/list_remove_user.png" width="45" height="45" class="upravit"></a>     <h3>{$page->name}</h3>	{$page->email} | <strong>{$page->role}</strong>
+    <br>	
+</div>{/foreach}    {/block}

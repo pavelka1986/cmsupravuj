@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+    <meta http-equiv="Content-Language" content="cs" />
+
+    <meta name="Author" content="David Pavelka; e-mail:dejvid.pavelka@seznam.cz " />
+
+    <meta name="Copyright" content="MySoftware.cz" />
+
+    <meta name="Description" content="Účetní software zdarma online" />
+
+    <meta name="Keywords" content="Software, účetnictví, online" />
+
+    <meta name="robots" content="index,follow" />
+
+    <meta name='googlebot' content='index,follow,snippet,archive' />
+
+    <meta name="rating" content="general" />
+
+    <title>{block #title}{/block} | MySoftware.cz
+
+    </title>
+
+    <link rel="shortcut icon" href="{$basePath}/img/favicon.ico" type="image/x-icon" />
+
+    <link rel="icon" href="{$basePath}/img/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{$basePath}/css/reset.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{$basePath}/css/site.css" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-1199040-10']);
+
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+</script>
+
+  </head>
+
+  <body>
+
+    <div id="container_top">
+
+      <div id="top">
+
+        <div id="menu"> {foreach $menu as $_menu}
+
+          <a href="{link default, $_menu->id, $_menu->nazev_url}" title="{$_menu->nazev}">{$_menu->nazev}</a>   {/foreach}
+
+        </div>
+
+        <p class="seo_box">MySoftware.cz
+
+        </p>
+
+        <img src="{$basePath}/img/web/zivnostnik.jpg" class="zivnostnik" alt="Živnostník" />
+
+        <img src="{$basePath}/img/web/mala_firma.jpg" class="mala_firma" alt="Malá firma" />
+
+        <img src="{$basePath}/img/web/velka_firma.jpg" class="velka_firma" alt="Velká firma" />
+
+      </div>
+
+    </div>
+
+    <div id="container_info">
+
+      <div id="info">
+
+        <div>
+
+          <img src="{$basePath}/img/web/info/kexi.png" alt="Snadná dostupnost" />Snadná dostupnost
+
+        </div>
+
+        <div>
+
+          <img src="{$basePath}/img/web/info/document_encrypt.png" alt="Vysoké zabezpečení" /> Vysoké zabezpečení
+
+        </div>
+
+        <div>
+
+          <img src="{$basePath}/img/web/info/book2.png" alt="Rychlost a jednoduchost" /> Rychlost a jednoduchost
+
+        </div>
+
+        <div>
+
+          <img src="{$basePath}/img/web/info/games_hint.png" alt="Rychlost a jednoduchost" /> Rychlost a jednoduchost
+
+        </div>
+
+        <div>
+
+          <img src="{$basePath}/img/web/info/apply.png" alt="Účetnictví zdarma" /> Účetnictví zdarma
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="container_obsah">
+
+      <div id="obsah">               {include #content}
+
+      </div>
+
+    </div>
+
+    <div id="container_paticka">
+
+      <div id="paticka">        (c) 2010 MySoftware.cz je účetní aplikace určená pro živnostníky, malé a velké firmy  |
+
+        <a href="{link :Admin:Default:}">Administrace</a> | <a href="http://davidpavelka.ledec-nad-sazavou.cz">Vytvořil</a>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

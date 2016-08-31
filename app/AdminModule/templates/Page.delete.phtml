@@ -1,0 +1,5 @@
+{block #title}Smazat aktualitu | {include #parent}{/block} {block #content} {if $stranky} 
+<p> <h3>{$stranky->titulek}</h3> {$stranky->text_uvodni_strana}
+</p>{!$form} {else} 
+<p>Aktualita nebyla nalezená
+</p>{/if} {/block}

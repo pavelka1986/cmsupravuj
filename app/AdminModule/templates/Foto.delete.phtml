@@ -1,0 +1,7 @@
+{block #title}Smazat fotogalerii | {include #parent}{/block} {block #content} {if $foto} 
+<p> <h3>{$foto->titulek}</h3> 
+</p>{foreach new DirectoryIterator($adresas) as $file}      {continueIf $file->isDot()}      {continueIf $file->isDir()}      
+<a href="{$basePath}/{$adresas}/{$file}">         
+  <img src="{$basePath}/{$adresas}/{$file}" width="100">         </a>      {/foreach} {!$form} {else} 
+<p>Fotogalerie nebyla nalezená
+</p>{/if} {/block}

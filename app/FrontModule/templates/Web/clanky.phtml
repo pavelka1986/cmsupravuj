@@ -1,0 +1,22 @@
+{block #title}{foreach $stranky as $_stranky}{$_stranky->titulek}{/foreach}{include #parent}{/block}
+
+{block #content}
+  {foreach $stranky as $_stranky}
+  <p><h1>{$_stranky->titulek}</h1><br>
+	{$_stranky->text_aktualita}</p>
+
+{/foreach}
+       <br>
+{foreach $foto as $_foto}
+     <p><i>Fotogalerie: <a href="{link foto, $_foto->id, $_foto->nazev_slozky}">{$_foto->titulek}</a></i></p>
+     {/foreach}
+     <br>
+     
+{foreach $docs as $_docs}
+  <p>
+  <img src="{$basePath}/img/web/{$_docs->typ_souboru}.jpg">
+  {$_docs->titulek} 
+  (vyvěšeno {$_docs->vyveseno_od})<br>
+  <a href="{$basePath}/docs/{$_docs->nazev_souboru}.{$_docs->typ_souboru}">(soubor ve formátu .{$_docs->typ_souboru})</a></p>
+{/foreach} 
+

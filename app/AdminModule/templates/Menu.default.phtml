@@ -1,0 +1,13 @@
+{block #title}Přehled položek menu | {include #parent}{/block} 
+<p>
+  <a href="{link add}">
+    <img src="{$baseUri}img/admin/plus.png" height="50" width="50" alt="Přidat"></a>
+</p>{block #content}     {foreach $menu as $_menu} 
+<div id="annonce">	
+  <p>
+    <a href="{link edit, $_menu->id}">
+      <img src="{$baseUri}img/admin/fileview_split.png" width="45" height="45" class="upravit">  </a> 
+    <a href="{link delete, $_menu->id}">
+      <img src="{$baseUri}img/admin/emptytrash.png" width="45" height="45" class="upravit"></a>  <h3>{$_menu->nazev}</h3>	{$_menu->nazev_url} 
+    <br>	
+</div>{/foreach} {/block}

@@ -1,0 +1,5 @@
+{block #title}Upravit dokument | {include #parent}{/block} {block #content} 
+<h3>{foreach $docs as $page}
+{$page->titulek}.{$page->typ_souboru}{/foreach}
+</h3>{!$form}
+ {/block}

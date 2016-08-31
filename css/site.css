@@ -1,0 +1,192 @@
+body {
+	font-family: Tahoma, "Lucida Grande CE", lucida, sans-serif;
+	text-align: center;
+	background-color: #2D4982;
+	font-size: 16px;
+}
+/* Design */
+#container_top {
+	height: 453px;
+	background: url(../img/web/background_top.jpg) repeat-x;
+	width: 100%;
+}
+#top {
+	position: relative;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	height: 453px;
+	background: url(../img/web/top.jpg);
+	z-index: 5;
+}
+#menu {
+	position: absolute;
+	left: 600px;
+	top: 30px;
+}
+#top img.zivnostnik {
+	position: absolute;
+	top: 270px;
+	left: 15px;
+	width: 285px;
+	height: 150px;
+}
+#top img.mala_firma {
+	position: absolute;
+	top: 270px;
+	left: 340px;
+	width: 285px;
+	height: 150px;
+}
+#top img.velka_firma {
+	position: absolute;
+	top: 270px;
+	right: 15px;
+	width: 285px;
+	height: 150px;
+}
+#container_info {
+	height: 79px;
+	background-color: #2D4982;
+	width: 100%;
+}
+#info {
+	position: relative;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	height: 79px;
+	color: white;
+	font-size: 19px;
+}
+#info div {
+	margin-top: 18px;
+	width: 180px;
+	float: left;
+}
+#info img {
+	width: 45px;
+	height: 45px;
+	margin-right: 5px;
+	float: left;
+	clear: both;
+}
+#container_obsah {
+	background-color: #fff;
+	width: 100%;
+}
+#obsah {
+	position: relative;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	font-size: 15px;
+}
+hr.cistic {
+	clear: both;
+	height: 1px;
+	border: none;
+	margin: -1em 0 0 0;
+	visibility: hidden;
+	padding-bottom: 100px;
+}
+#container_paticka {
+	height: 151px;
+	background-color: background-color: #2D4982;
+	width: 100%;
+}
+#paticka {
+	position: relative;
+	height: 100px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	color: white;
+	font-size: 15px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+#paticka a {
+	color: white;
+}
+/* Odkazy */
+a:link {
+	text-decoration: underline;
+	color: black;
+}
+a:hover {
+	text-decoration: underline;
+	color: black;
+}
+a:visited {
+	text-decoration: underline;
+	color: black;
+}
+a:active {
+	text-decoration: underline;
+	color: black;
+}
+/* SEO box */
+.seo_box {
+	display: none;
+}
+/* Menu */
+#menu a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	padding: 2px;
+	padding-top: 30px;
+	text-transform: lowercase;
+}
+#menu a:hover {
+	text-decoration: none;
+	font-size: 20px;
+	color: #55B936;
+	padding: 2px;
+	padding-top: 30px;
+	text-transform: lowercase;
+}
+/* Nadpisy */
+h1, h2, h3, h4, h5, h6 {
+	font-family: Tahoma, "Lucida Grande CE", lucida, sans-serif;
+}
+h1 {
+	padding: 5px;
+	margin-left: 10px;
+	color: #5FBD3C;
+	font-size: 23px;
+}
+h2 {
+	padding: 5px;
+	color: #5FBD3C;
+	font-size: 21px;
+}
+h3 {
+	padding: 5px;
+	color: #5FBD3C;
+	font-size: 19px;
+}
+ol {
+	list-style: decimal;
+	margin-left: 30px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+ul {
+	list-style: circle;
+	margin-left: 30px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+p {
+	padding: 10px;
+}
+/*p:first-letter {
+	margin-left: 10px;
+}
+*/

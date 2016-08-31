@@ -1,0 +1,9 @@
+{block #title}Přehled fotogalerií | {include #parent}{/block} {block #content}   {foreach $foto as $page} 
+<div id="annonce">	
+  <p>
+    <a href="{link edit, $page->id}">
+      <img src="{$baseUri}img/admin/image_jpeg2000.png" width="45" height="45" class="upravit">  </a> 
+    <a href="{link delete, $page->id}">
+      <img src="{$baseUri}img/admin/emptytrash.png" width="45" height="45" class="upravit"></a>     <h3>{$page->titulek}</h3>	{$page->nazev_slozky}
+    <br>	
+</div>{/foreach} {/block}

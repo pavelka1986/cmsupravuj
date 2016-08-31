@@ -1,0 +1,4 @@
+{block #title}Upravit aktualitu | {include #parent}{/block} {block #content}  
+<br>     {foreach new DirectoryIterator($adresas) as $file}      {continueIf $file->isDot()}      {continueIf $file->isDir()}      
+<a rel="example_group" href="{$basePath}/{$adresas}/{$file}" title="Popisek">
+  <img src="{$basePath}/{$adresas}/{$file}" width="100">         </a>      {/foreach} {/block}

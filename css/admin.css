@@ -1,0 +1,194 @@
+/* CSS Document */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: #1B303F;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+form, input, textarea {
+  	font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+	position: relative;
+	margin: auto;
+	width: 980px;
+	text-align: left;
+	background-color: #eeeeee;
+}
+hr.cistic {
+	clear: both;
+	height: 1px;
+	border: none;
+	margin: -1em 0 0 0;
+	visibility: hidden;
+  padding-bottom: 100px;
+}
+#dotted {
+  padding: 5px 20px;
+}
+#menu {
+  background-color: #e0e0e0;
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 10px;
+  height: 50px;
+  border-bottom: solid 1px #81888E;
+  }
+#top {
+	width: 980px;
+	height: 100px;
+	background-color: black;
+	padding-top: 5px;
+	background-image: url(../img/admin/logo_top.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+}
+#nadpisek {
+	/* border-bottom: solid 1px #81888E; */
+	
+	margin-bottom: 5px;
+}
+#news {
+	position: absolute;
+	top: 480px;
+}
+#main_picture {
+	position: absolute;
+	top: 70px;
+	left: 50px
+}
+#main_text {
+	position: absolute;
+	top: 100px;
+	left: 650px;
+	width: 300px;
+}
+#fotogalerie {
+	text-align: center;
+	width: 805px;
+	margin-left: auto;
+	margin-right: auto
+}
+#counter {
+	float: right;
+}
+#counter_aktuality {
+	margin-left: 800px;
+}
+h1 {
+	margin-bottom: 3pt;
+	padding-left: 10px;
+	border-bottom: dotted 1px #81888E;
+	font-size: 22px;
+}
+h2 {
+	margin-left: 10px;
+}
+h3 {
+	margin-bottom: 0px;
+}
+#paticka {
+	margin-top: 40px;
+	color: white;
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+}
+p {
+	text-align: justify;
+}
+a {
+	color: black;
+	text-decoration: none
+}
+img {
+	border: none;
+}
+img.uvod {
+	width: 220px;
+}
+div.flash {
+	color: black;
+	background: #e0e0e0;
+	border: 1px solid black;
+	padding: 1em;
+	margin: 5px 10px 5px 0px;
+}
+#annonce{
+  border-bottom: dotted 1px #81888E; padding-top: 3px; padding-bottom: 10px;
+}
+#annonce:hover{
+  background-color: #e0e0e0;
+}
+.upravit{
+  margin-right: 8px; float: left;
+  
+}
+/* --------------------------jQuery menu----------------------------- */
+.clear {
+	clear: both
+}
+/* remove the list style */
+#nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* make the LI display inline */
+/* it's position relative so that position absolute */
+/* can be used in submenu */
+#nav li {
+	float: left;
+	display: block;
+ 	position: relative;
+	z-index: 500;
+	margin: 0 1px;
+}
+/* this is the parent menu */
+#nav li a {
+  padding: 8px 5px 0 5px;
+  height: 15px;
+	text-decoration: none;
+}
+#nav li a:hover {
+
+}
+/* submenu, it's hidden by default */
+#nav ul {
+	position: absolute;
+	left: 9px;
+	top: 50px;
+	display: none;
+	margin: 0 0 0 -1px;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+#nav ul li {
+	width: 120px;
+	float: left;
+	border-top: 1px solid #e0e0e0;
+	text-align: left;
+}
+/* display block will make the link fill the whole area of LI */
+#nav ul a {
+	display: block;
+	padding: 7px;
+  background-color: black;;
+  color: white;
+  font-weight: normal;
+}
+#nav ul a:hover {
+     color: #e0e0e0;
+}
+
+
+/* fix ie6 small issue */
+/* we should always avoid using hack like this */
+/* should put it into separate file: ) */
+*html #nav ul {
+	margin: 0 0 0 -2px;
+

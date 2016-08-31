@@ -1,0 +1,16 @@
+{block #title}{foreach $foto as $_foto}{$_foto->titulek}{/foreach}{include #parent}{/block}
+
+{block #content}
+{foreach $foto as $_foto}
+   <p><h1>{$_foto->titulek}</h1></p><br>
+   
+   {foreach new DirectoryIterator($adresas) as $file}
+     {continueIf $file->isDot()}
+     {continueIf $file->isDir()}
+     <a href="{$basePath}/{$adresas}/{$file}">
+         <img src="{$basePath}/{$adresas}/{$file}" width="560">
+         </a><br><br>
+
+      {/foreach}
+   
+{/foreach}

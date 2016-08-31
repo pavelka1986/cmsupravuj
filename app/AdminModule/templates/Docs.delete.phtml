@@ -1,0 +1,5 @@
+{block #title}Smazat fotogalerii | {include #parent}{/block} {block #content} {if $docs} 
+<p> <h3>{$docs->titulek}.{$docs->nazev_souboru}</h3>
+</p>{!$form} {else} 
+<p>Položka menu nebyla nalezená
+</p>{/if} {/block}

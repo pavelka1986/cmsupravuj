@@ -1,0 +1,5 @@
+{block #title}Smazat uživatele | {include #parent}{/block} {block #content} {if $users} 
+<p> <h3>{$users->name}</h3> {$users->email}
+</p>{!$form} {else} 
+<p>Uživatel nebyl nalezen
+</p>{/if} {/block}

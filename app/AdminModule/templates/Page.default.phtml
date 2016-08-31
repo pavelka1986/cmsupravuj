@@ -1,0 +1,9 @@
+{block #title}Přehled aktualit | {include #parent}{/block} {block #content}   {foreach $stranky as $page} 
+<div id="annonce">	
+  <p>
+    <a href="{link edit, $page->id}">
+      <img src="{$baseUri}img/admin/im_status_message_edit.png" width="45" height="45" class="upravit">  </a> 
+    <a href="{link delete, $page->id}">
+      <img src="{$baseUri}img/admin/emptytrash.png" width="45" height="45" class="upravit"></a>     <h3>{$page->titulek}</h3>	{$page->text_uvodni_strana}
+    <br>	
+</div>{/foreach} {/block}

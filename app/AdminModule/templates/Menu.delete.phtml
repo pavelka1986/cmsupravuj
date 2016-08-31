@@ -1,0 +1,5 @@
+{block #title}Smazat položku menu | {include #parent}{/block} {block #content} {if $menu} 
+<p> <h3>{$menu->nazev}</h3> {$menu->obsah}
+</p>{!$form} {else} 
+<p>Položka menu nebyla nalezená
+</p>{/if} {/block}
